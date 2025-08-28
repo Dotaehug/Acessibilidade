@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>One Piece</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class=" p-5">
+        <!-- mudou o class -->
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/sabo.png" class="nav-img" width="150" height="150" loading="lazy">
+            <a href="#inicio" class="navbar-brand"></a>
+            <ul class="nav d-flex align-items-center">
+                <li class="nav-item"><a class="nav-link px-3" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#tropicalia">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#contato">Contato</a></li>
+            </ul>
+            <!-- igual -->
+            <!-- ...existing code... -->
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao"
+                    aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold"
+                        aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold"
+                        aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold"
+                        aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <img src="img/logo-2.png" class="mb-3" width="550" height="200" loading="lazy">
+                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
+            </div>
+        </section>
+
+        <!--    <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0"
+            aria-label="Seção explicativa sobre a tropicália">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center ">
+                    <img src="img/MUGIWARAS.jpeg" class="rounded-pill" width="400" height="500" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>O que é One Piece?</h2>
+                    <p class="p-2">"One Piece" é uma série popular de mangá e anime japonesa criada por Eiichiro Oda. A
+                        história começou a ser publicada em 1997 na revista Weekly Shōnen Jump e o anime em 1999 pela TV
+                        Fuji. A obra se tornou uma das mais influentes e bem-sucedidas da história da cultura pop
+                        japonesa.</p>
+                    <p class="p-2">O enredo acompanha as aventuras de Monkey D. Luffy, um jovem pirata com o sonho de encontrar o
+                        lendário tesouro conhecido como One Piece - deixado por Gol D. Roger, antigo Rei dos Piratas,
+                        que mencionou sua existência pouco antes de ser executado, o que deu início à chamada "Era dos
+                        Piratas" - e se tornar o Rei dos Piratas.</p>
+                    <p class="p-2">Luffy ganhou poderes elásticos após comer uma Akuma no Mi (Fruta do Diabo), que também o impede
+                        de nadar - ironicamente trágico para um pirata. Ele reúne uma tripulação chamada Os Chapéus de
+                        Palha e juntos, eles enfrentam perigosos inimigos, governos corruptos e criaturas misteriosas em
+                        um vasto mundo cheio de ilhas exóticas, culturas únicas e uma mitologia rica. </p>
+                </div>
+                </div>
+        </section>
+ -->
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0"
+            aria-label="Seção explicativa sobre One Piece">
+            <div class="container">
+                <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                    <img src="img/MUGIWARAS.jpeg" alt="Imagem dos Chapéus de Palha" title="Os Chapéus de Palha"
+                        class="rounded-4 img-fluid shadow" width="350" height="350" loading="lazy">
+
+                </div>
+                <div class="col-md-7">
+                    <div class="about-content p-3">
+                        <h2>O que é One Piece?</h2>
+                        <p class="p-2">"One Piece" é uma série popular de mangá e anime japonesa criada por Eiichiro
+                            Oda. A
+                            história começou a ser publicada em 1997 na revista Weekly Shōnen Jump e o anime em 1999
+                            pela TV
+                            Fuji. A obra se tornou uma das mais influentes e bem-sucedidas da história da cultura pop
+                            japonesa.</p>
+                        <p class="p-2">A história acompanha as aventuras de <strong>Monkey D. Luffy</strong>, um jovem
+                            pirata com o sonho de
+                            encontrar o lendário tesouro conhecido como <em>One Piece</em> - deixado por Gol D. Roger,
+                            antigo Rei
+                            dos Piratas, que mencionou sua existência pouco antes de ser executado, o que deu início à
+                            chamada "Era dos Piratas" - e se tornar o Rei dos Piratas.</p>
+                        <p class="p-2">Luffy ganhou poderes elásticos após comer uma
+                            Akuma no Mi (Fruta do Diabo), que também o impede de nadar - ironicamente trágico para um
+                            pirata. Ele reúne uma tripulação chamada Os Chapéus de Palha e
+                            juntos, eles enfrentam perigosos inimigos, governos corruptos e criaturas misteriosas em um
+                            vasto mundo cheio de ilhas exóticas, culturas únicas e uma mitologia rica.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center pt-5 mb-4">Galeria</h2>
+            <div class="container p-4 mt-3 fundo-galeria rounded-4">
+            </div>
+
+            <!-- Gallery Navigation -->
+            <ul class="nav nav-pills mb-4 justify-content-center gallery-nav" id="gallery-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active px-4 mx-1" id="all-tab" data-bs-toggle="pill" data-bs-target="#all"
+                        type="button" role="tab" aria-controls="all" aria-selected="true">Todos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 mx-1" id="east-blue-tab" data-bs-toggle="pill"
+                        data-bs-target="#east-blue" type="button" role="tab" aria-controls="east-blue"
+                        aria-selected="false">East Blue</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 mx-1" id="paradise-tab" data-bs-toggle="pill"
+                        data-bs-target="#paradise" type="button" role="tab" aria-controls="paradise"
+                        aria-selected="false">Grand Line</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link px-4 mx-1" id="new-world-tab" data-bs-toggle="pill"
+                        data-bs-target="#new-world" type="button" role="tab" aria-controls="new-world"
+                        aria-selected="false">Novo Mundo</button>
+                </li>
+            </ul>
+
+            <!-- Gallery Content -->
+            <div class="tab-content" id="gallery-content">
+                <!-- All Images -->
+                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/gold-d-roger.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Gold D. Roger, o Rei dos Piratas, anunciando a existência do One Piece"
+                                    loading="lazy">
+                                <div class="image-caption">Gold D. Roger</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/inicio-1.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Luffy e sua tripulação no início da jornada" loading="lazy">
+                                <div class="image-caption">Início da Jornada</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/baratie-2.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Restaurante Baratie, onde Sanji se juntou à tripulação" loading="lazy">
+                                <div class="image-caption">Baratie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/arlong-park-3.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Arlong Park, onde Nami oficialmente se juntou à tripulação" loading="lazy">
+                                <div class="image-caption">Arlong Park</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/loguetown-4.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Loguetown, última cidade antes da Grand Line" loading="lazy">
+                                <div class="image-caption">Loguetown</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/grand-line-5.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Entrada para a Grand Line, a rota mais perigosa do mundo" loading="lazy">
+                                <div class="image-caption">Grand Line</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/alabasta-6.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Reino de Alabasta, onde enfrentaram Crocodile" loading="lazy">
+                                <div class="image-caption">Alabasta</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/skypiea-7.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Skypiea, a ilha no céu" loading="lazy">
+                                <div class="image-caption">Skypiea</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/water-7-8.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Water 7, cidade dos construtores navais" loading="lazy">
+                                <div class="image-caption">Water 7</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/enies-lobby-9.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Enies Lobby, fortaleza do Governo Mundial" loading="lazy">
+                                <div class="image-caption">Enies Lobby</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/thriller-bark-10.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Thriller Bark, navio fantasma de Gecko Moria" loading="lazy">
+                                <div class="image-caption">Thriller Bark</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/impel-down-11.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Impel Down, a prisão submarina de máxima segurança" loading="lazy">
+                                <div class="image-caption">Impel Down</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/marineford-12.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Marineford, quartel-general da Marinha e palco da guerra" loading="lazy">
+                                <div class="image-caption">Marineford</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/sabaody-13.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Arquipélago Sabaody, ponto de entrada para o Novo Mundo" loading="lazy">
+                                <div class="image-caption">Sabaody</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/punk-hazard-14.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Punk Hazard, ilha experimental dividida entre gelo e fogo" loading="lazy">
+                                <div class="image-caption">Punk Hazard</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/dressrosa-15.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Dressrosa, reino controlado por Doflamingo" loading="lazy">
+                                <div class="image-caption">Dressrosa</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/zou-16.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Zou, ilha nas costas de um elefante gigante" loading="lazy">
+                                <div class="image-caption">Zou</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/reverie-17.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Reverie, reunião dos líderes mundiais" loading="lazy">
+                                <div class="image-caption">Reverie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/whole-cake-18.png" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Whole Cake Island, território da Yonkou Big Mom" loading="lazy">
+                                <div class="image-caption">Whole Cake Island</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/wano-19.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="País de Wano, terra dos samurais" loading="lazy">
+                                <div class="image-caption">Wano</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/egghead-20.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Egghead, ilha do futuro e laboratório do Dr. Vegapunk" loading="lazy">
+                                <div class="image-caption">Egghead</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- East Blue -->
+                <div class="tab-pane fade" id="east-blue" role="tabpanel" aria-labelledby="east-blue-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/inicio-1.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Luffy e sua tripulação no início da jornada" loading="lazy">
+                                <div class="image-caption">Início da Jornada</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/baratie-2.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Restaurante Baratie, onde Sanji se juntou à tripulação" loading="lazy">
+                                <div class="image-caption">Baratie</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/arlong-park-3.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Arlong Park, onde Nami oficialmente se juntou à tripulação" loading="lazy">
+                                <div class="image-caption">Arlong Park</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/loguetown-4.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Loguetown, última cidade antes da Grand Line" loading="lazy">
+                                <div class="image-caption">Loguetown</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grand Line  -->
+                <div class="tab-pane fade" id="paradise" role="tabpanel" aria-labelledby="paradise-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/grand-line-5.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Entrada para a Grand Line, a rota mais perigosa do mundo" loading="lazy">
+                                <div class="image-caption">Reverse Mountain</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/alabasta-6.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Reino de Alabasta, onde enfrentaram Crocodile" loading="lazy">
+                                <div class="image-caption">Alabasta</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/skypiea-7.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Skypiea, a ilha no céu" loading="lazy">
+                                <div class="image-caption">Skypiea</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/water-7-8.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Water 7, cidade dos construtores navais" loading="lazy">
+                                <div class="image-caption">Water 7</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/enies-lobby-9.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Enies Lobby, fortaleza do Governo Mundial" loading="lazy">
+                                <div class="image-caption">Enies Lobby</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/thriller-bark-10.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Thriller Bark, navio fantasma de Gecko Moria" loading="lazy">
+                                <div class="image-caption">Thriller Bark</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/sabaody-13.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Arquipélago Sabaody, ponto de entrada para o Novo Mundo" loading="lazy">
+                                <div class="image-caption">Sabaody</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/impel-down-11.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Impel Down, a prisão submarina de máxima segurança" loading="lazy">
+                                <div class="image-caption">Impel Down</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/marineford-12.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Marineford, quartel-general da Marinha e palco da guerra" loading="lazy">
+                                <div class="image-caption">Marineford</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Novo Mundo -->
+                <div class="tab-pane fade" id="new-world" role="tabpanel" aria-labelledby="new-world-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/punk-hazard-14.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Punk Hazard, ilha experimental dividida entre gelo e fogo" loading="lazy">
+                                <div class="image-caption">Punk Hazard</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/dressrosa-15.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Dressrosa, reino controlado por Doflamingo" loading="lazy">
+                                <div class="image-caption">Dressrosa</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/zou-16.webp" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Zou, ilha nas costas de um elefante gigante" loading="lazy">
+                                <div class="image-caption">Zou</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/whole-cake-18.png" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Whole Cake Island, território da Yonkou Big Mom" loading="lazy">
+                                <div class="image-caption">Whole Cake Island</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/wano-19.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="País de Wano, terra dos samurais" loading="lazy">
+                                <div class="image-caption">Wano</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="gallery-item">
+                                <img src="img/egghead-20.jpg" class="img-fluid rounded-4 shadow-sm"
+                                    alt="Egghead, ilha do futuro e laboratório do Dr. Vegapunk" loading="lazy">
+                                <div class="image-caption">Egghead</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="mb-3">One Piece</h5>
+                    <p class="mb-1">Projeto fictício sem fins comerciais.</p>
+                    <p>Desenvolvido por Start by Alura.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <h5 class="mb-3">Acesse nossas redes</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3" aria-label="Whatsapp">
+                            <i class="bi bi-whatsapp fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white me-3" aria-label="Instagram">
+                            <i class="bi bi-instagram fs-4"></i>
+                        </a>
+                        <a href="#" class="text-white" aria-label="TikTok">
+                            <i class="bi bi-tiktok fs-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
