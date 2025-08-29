@@ -14,22 +14,20 @@
 
 <body>
     <header class=" p-5">
-        <!-- mudou o class -->
         <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/sabo.png" class="nav-img" width="150" height="150" loading="lazy">
+            <img src="img/sabo.png" class="nav-img" width="180" height="180" loading="lazy">
             <a href="#inicio" class="navbar-brand"></a>
-            <ul class="nav d-flex align-items-center">
+            <ul class="nav d-flex align-items-center justify-content-center flex-grow-1">
                 <li class="nav-item"><a class="nav-link px-3" href="#inicio">Início</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="#tropicalia">Sobre</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="#galeria">Galeria</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="#contato">Contato</a></li>
             </ul>
-            <!-- igual -->
-            <!-- ...existing code... -->
+
             <div id="acessibilidade" class="menu-acessibilidade">
                 <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao"
                     aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade" aria-hidden="true">
                     <button id="aumentar-fonte" class="btn btn-primary fw-bold"
                         aria-label="Aumentar o tamanho da fonte">A+</button>
                     <button id="diminuir-fonte" class="btn btn-primary fw-bold"
@@ -43,7 +41,6 @@
 
     </header>
 
-
     <main class="container my-5">
         <section id="inicio" class="my-5">
             <div class="inicio-fundo d-flex justify-content-between align-items-center">
@@ -56,30 +53,10 @@
             </div>
         </section>
 
-        <!--    <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0"
-            aria-label="Seção explicativa sobre a tropicália">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="img/MUGIWARAS.jpeg" class="rounded-pill" width="400" height="500" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>O que é One Piece?</h2>
-                    <p class="p-2">"One Piece" é uma série popular de mangá e anime japonesa criada por Eiichiro Oda. A
-                        história começou a ser publicada em 1997 na revista Weekly Shōnen Jump e o anime em 1999 pela TV
-                        Fuji. A obra se tornou uma das mais influentes e bem-sucedidas da história da cultura pop
-                        japonesa.</p>
-                    <p class="p-2">O enredo acompanha as aventuras de Monkey D. Luffy, um jovem pirata com o sonho de encontrar o
-                        lendário tesouro conhecido como One Piece - deixado por Gol D. Roger, antigo Rei dos Piratas,
-                        que mencionou sua existência pouco antes de ser executado, o que deu início à chamada "Era dos
-                        Piratas" - e se tornar o Rei dos Piratas.</p>
-                    <p class="p-2">Luffy ganhou poderes elásticos após comer uma Akuma no Mi (Fruta do Diabo), que também o impede
-                        de nadar - ironicamente trágico para um pirata. Ele reúne uma tripulação chamada Os Chapéus de
-                        Palha e juntos, eles enfrentam perigosos inimigos, governos corruptos e criaturas misteriosas em
-                        um vasto mundo cheio de ilhas exóticas, culturas únicas e uma mitologia rica. </p>
-                </div>
-                </div>
-        </section>
- -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+
 
         <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0"
             aria-label="Seção explicativa sobre One Piece">
@@ -121,7 +98,7 @@
             <div class="container p-4 mt-3 fundo-galeria rounded-4">
             </div>
 
-            <!-- Gallery Navigation -->
+            <!-- Navegação Galeria -->
             <ul class="nav nav-pills mb-4 justify-content-center gallery-nav" id="gallery-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active px-4 mx-1" id="all-tab" data-bs-toggle="pill" data-bs-target="#all"
@@ -144,14 +121,14 @@
                 </li>
             </ul>
 
-            <!-- Gallery Content -->
+            <!-- Conteúdo Galeria -->
             <div class="tab-content" id="gallery-content">
-                <!-- All Images -->
+                <!-- Todas Imagens -->
                 <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                     <div class="row g-4">
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/gold-d-roger.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/gold-d-roger.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Gold D. Roger, o Rei dos Piratas, anunciando a existência do One Piece"
                                     loading="lazy">
                                 <div class="image-caption">Gold D. Roger</div>
@@ -159,140 +136,140 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/inicio-1.jpg" class="img-fluid rounded-4 shadow-sm"
-                                    alt="Luffy e sua tripulação no início da jornada" loading="lazy">
+                                <img src="img/inicio-1.jpg" class="img-fluid rounded-4 shadow-sm img-click"
+                                    alt="Luffy  no início da jornada" loading="lazy">
                                 <div class="image-caption">Início da Jornada</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/baratie-2.jpg" class="img-fluid rounded-4 shadow-sm"
-                                    alt="Restaurante Baratie, onde Sanji se juntou à tripulação" loading="lazy">
+                                <img src="img/baratie-2.jpg" class="img-fluid rounded-4 shadow-sm img-click"
+                                    alt="Restaurante Baratie, onde Sanji trabalhava antes de se juntar à tripulação" loading="lazy">
                                 <div class="image-caption">Baratie</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/arlong-park-3.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/arlong-park-3.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Arlong Park, onde Nami oficialmente se juntou à tripulação" loading="lazy">
                                 <div class="image-caption">Arlong Park</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/loguetown-4.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/loguetown-4.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Loguetown, última cidade antes da Grand Line" loading="lazy">
                                 <div class="image-caption">Loguetown</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/grand-line-5.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/grand-line-5.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Entrada para a Grand Line, a rota mais perigosa do mundo" loading="lazy">
                                 <div class="image-caption">Grand Line</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/alabasta-6.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/alabasta-6.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Reino de Alabasta, onde enfrentaram Crocodile" loading="lazy">
                                 <div class="image-caption">Alabasta</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/skypiea-7.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/skypiea-7.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Skypiea, a ilha no céu" loading="lazy">
                                 <div class="image-caption">Skypiea</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/water-7-8.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/water-7-8.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Water 7, cidade dos construtores navais" loading="lazy">
                                 <div class="image-caption">Water 7</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/enies-lobby-9.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/enies-lobby-9.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Enies Lobby, fortaleza do Governo Mundial" loading="lazy">
                                 <div class="image-caption">Enies Lobby</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/thriller-bark-10.webp" class="img-fluid rounded-4 shadow-sm"
-                                    alt="Thriller Bark, navio fantasma de Gecko Moria" loading="lazy">
+                                <img src="img/thriller-bark-10.webp" class="img-fluid rounded-4 shadow-sm img-click
+                                    alt=Thriller Bark, navio fantasma de Gecko Moria" loading="lazy">
                                 <div class="image-caption">Thriller Bark</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/impel-down-11.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/impel-down-11.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Impel Down, a prisão submarina de máxima segurança" loading="lazy">
                                 <div class="image-caption">Impel Down</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/marineford-12.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/marineford-12.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Marineford, quartel-general da Marinha e palco da guerra" loading="lazy">
                                 <div class="image-caption">Marineford</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/sabaody-13.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/sabaody-13.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Arquipélago Sabaody, ponto de entrada para o Novo Mundo" loading="lazy">
                                 <div class="image-caption">Sabaody</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/punk-hazard-14.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/punk-hazard-14.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Punk Hazard, ilha experimental dividida entre gelo e fogo" loading="lazy">
                                 <div class="image-caption">Punk Hazard</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/dressrosa-15.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/dressrosa-15.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Dressrosa, reino controlado por Doflamingo" loading="lazy">
                                 <div class="image-caption">Dressrosa</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/zou-16.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/zou-16.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Zou, ilha nas costas de um elefante gigante" loading="lazy">
                                 <div class="image-caption">Zou</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/reverie-17.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/reverie-17.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Reverie, reunião dos líderes mundiais" loading="lazy">
                                 <div class="image-caption">Reverie</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/whole-cake-18.png" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/whole-cake-18.png" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Whole Cake Island, território da Yonkou Big Mom" loading="lazy">
                                 <div class="image-caption">Whole Cake Island</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/wano-19.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/wano-19.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="País de Wano, terra dos samurais" loading="lazy">
                                 <div class="image-caption">Wano</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/egghead-20.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/egghead-20.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Egghead, ilha do futuro e laboratório do Dr. Vegapunk" loading="lazy">
                                 <div class="image-caption">Egghead</div>
                             </div>
@@ -306,28 +283,28 @@
                     <div class="row g-4">
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/inicio-1.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/inicio-1.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Luffy e sua tripulação no início da jornada" loading="lazy">
                                 <div class="image-caption">Início da Jornada</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/baratie-2.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/baratie-2.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Restaurante Baratie, onde Sanji se juntou à tripulação" loading="lazy">
                                 <div class="image-caption">Baratie</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/arlong-park-3.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/arlong-park-3.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Arlong Park, onde Nami oficialmente se juntou à tripulação" loading="lazy">
                                 <div class="image-caption">Arlong Park</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/loguetown-4.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/loguetown-4.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Loguetown, última cidade antes da Grand Line" loading="lazy">
                                 <div class="image-caption">Loguetown</div>
                             </div>
@@ -340,63 +317,63 @@
                     <div class="row g-4">
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/grand-line-5.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/grand-line-5.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Entrada para a Grand Line, a rota mais perigosa do mundo" loading="lazy">
                                 <div class="image-caption">Reverse Mountain</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/alabasta-6.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/alabasta-6.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Reino de Alabasta, onde enfrentaram Crocodile" loading="lazy">
                                 <div class="image-caption">Alabasta</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/skypiea-7.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/skypiea-7.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Skypiea, a ilha no céu" loading="lazy">
                                 <div class="image-caption">Skypiea</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/water-7-8.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/water-7-8.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Water 7, cidade dos construtores navais" loading="lazy">
                                 <div class="image-caption">Water 7</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/enies-lobby-9.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/enies-lobby-9.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Enies Lobby, fortaleza do Governo Mundial" loading="lazy">
                                 <div class="image-caption">Enies Lobby</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/thriller-bark-10.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/thriller-bark-10.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Thriller Bark, navio fantasma de Gecko Moria" loading="lazy">
                                 <div class="image-caption">Thriller Bark</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/sabaody-13.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/sabaody-13.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Arquipélago Sabaody, ponto de entrada para o Novo Mundo" loading="lazy">
                                 <div class="image-caption">Sabaody</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/impel-down-11.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/impel-down-11.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Impel Down, a prisão submarina de máxima segurança" loading="lazy">
                                 <div class="image-caption">Impel Down</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/marineford-12.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/marineford-12.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Marineford, quartel-general da Marinha e palco da guerra" loading="lazy">
                                 <div class="image-caption">Marineford</div>
                             </div>
@@ -409,42 +386,42 @@
                     <div class="row g-4">
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/punk-hazard-14.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/punk-hazard-14.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Punk Hazard, ilha experimental dividida entre gelo e fogo" loading="lazy">
                                 <div class="image-caption">Punk Hazard</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/dressrosa-15.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/dressrosa-15.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Dressrosa, reino controlado por Doflamingo" loading="lazy">
                                 <div class="image-caption">Dressrosa</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/zou-16.webp" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/zou-16.webp" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Zou, ilha nas costas de um elefante gigante" loading="lazy">
                                 <div class="image-caption">Zou</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/whole-cake-18.png" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/whole-cake-18.png" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Whole Cake Island, território da Yonkou Big Mom" loading="lazy">
                                 <div class="image-caption">Whole Cake Island</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/wano-19.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/wano-19.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="País de Wano, terra dos samurais" loading="lazy">
                                 <div class="image-caption">Wano</div>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="gallery-item">
-                                <img src="img/egghead-20.jpg" class="img-fluid rounded-4 shadow-sm"
+                                <img src="img/egghead-20.jpg" class="img-fluid rounded-4 shadow-sm img-click"
                                     alt="Egghead, ilha do futuro e laboratório do Dr. Vegapunk" loading="lazy">
                                 <div class="image-caption">Egghead</div>
                             </div>
@@ -511,8 +488,26 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+
+
+    <div class="modal fade" id="imagemModal" tabindex="-1" aria-labelledby="imagemModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 text-center">
+                    <img id="imagemModalImg" src="" alt="Imagem ampliada" class="img-fluid rounded-4 shadow">
+                    <div id="imagemModalLegenda" class="mt-3 text-white fw-bold"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
